@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <title>General Cybernetics Pong</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header">
+        <h1>General Cybernetics</h1>
+        <h2>Real Time Biological Neural Net Pong</h2>
+    </div>
+    <div id="main">
+        <div id="game">
+            <canvas id="myGame" ></canvas>
+
+        </div>
+        <div id="visuals">
+            <div id="bnn-act">
+                
+                <img src="assets/download.jpeg" >
+                <p>realtime petri dish</p>
+            </div>
+                
+            <div id="bnn-heat">
+                
+                <img src="assets/multivariate_1.webp" >
+                <p> realtime neurons spike activity</p>
+                
+
+            </div>
+        </div>
+    </div>
+    <div id="status">
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script>
+        var socket = io();
+    </script>
+</body>
+</html>
